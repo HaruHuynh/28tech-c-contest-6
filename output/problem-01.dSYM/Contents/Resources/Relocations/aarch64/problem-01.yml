@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/haru/Code /C/28tech-c-contest-6/output/problem-01'
+relocations:     []
+...
