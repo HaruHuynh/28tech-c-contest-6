@@ -23,7 +23,6 @@ In YES nếu các phần tử trong mảng tăng dần, ngược lại in NO.
 
 #include <stdio.h>
 
-
 int main() {
     int n; 
     scanf("%d", &n);
@@ -36,6 +35,7 @@ int main() {
     for(int i = 1; i < n; i++){
         if(a[i] <= a[i - 1]){
             printf("NO\n");
+            return 0;
             // isSorted = 0;
             // break;
         }
