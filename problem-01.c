@@ -33,12 +33,14 @@ int main() {
     sang();
     int T;
     scanf("%d", &T);
-    int a[T];
-    for(int i = 0; i < T; i++) scanf("%d", &a[i]);
-
-    for(int i = 0; i < T; i++){
-        if(prime[a[i]]) printf("YES\n");
-        else printf("NO\n");
+    while(T--){
+        int n;
+        scanf("%d", &n);
+        if(prime[n]) {
+            printf("YES\n");
+        }else{
+            printf("NO\n");
+        }
     }
     return 0;
 }
