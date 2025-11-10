@@ -25,7 +25,7 @@ void sang() {
     }
     for(int i = 2; i <= sqrt(100000); i++){
         if(p[i] == i){ // Nếu i là số nguyên tố
-            for(int j = i * i; j <= 100000; j += i){ 
+            for(int j = i * i; j <= 100000; j += i){  // Loại bỏ các bội số của i bắt đầu từ i*i, j += i tức là tăng j lên i đơn vị
                 if(p[j] == j){ // Nếu j chưa được gán ước số nguyên tố nhỏ nhất
                     p[j] = i; // Gán i là ước số nguyên tố nhỏ nhất của j
                 }

@@ -17,12 +17,12 @@ Tất cả các xi là khác biệt và theo thứ tự tăng dần.
     int n;
     scanf("%d", &n);
     int a[n];
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i <= n; i++){
         scanf("%d", &a[i]);
     }
     for(int i = 0; i < n; i++){
         if(i == 0){
-            printf(("%d %d\n"), a[1] - a[0], a[n - 1] - a[0]);
+            printf("%d %d\n", a[1] - a[0], a[n - 1] - a[0]);
         }else if(i == n - 1){
             printf("%d %d\n", a[n - 1] - a[n - 2], a[n - 1] - a[0]);
         }else{

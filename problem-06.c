@@ -30,8 +30,6 @@ int main() {
     for(int i = 0; i < n; i++){
         scanf("%d", &a[i]);
     }
-    // insertionSort(a, n);
-    // int isSorted = 1;
     for(int i = 1; i < n; i++){
         if(a[i] <= a[i - 1]){
             printf("NO\n");
@@ -42,23 +40,5 @@ int main() {
     }
     printf("YES\n");
     return 0;
-    // if(isSorted){
-    //     printf("YES\n");
-    // } else {
-    //     printf("NO\n");
-    // }
+
 }
-
-
-
-// void insertionSort(int a[], int n){
-//     for(int i = 1; i < n; i++){
-//         int value = a[i];
-//         int pos = i - 1;
-//         while(pos >= 0 && a[pos] > value){
-//             a[pos + 1] = a[pos];
-//             pos--;
-//         }
-//         a[pos + 1] = value;
-//     }
-// }

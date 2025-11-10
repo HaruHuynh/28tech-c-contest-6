@@ -7,14 +7,14 @@ Gợi ý : Khi người khách mua vé đưa tờ 50 hoặc 100 thì cần kiể
 int check(int a[], int n){
     int dem25 = 0, dem50 = 0;
     for(int i = 0; i < n; i++){
-        if(a[i] == 25) ++dem25;
+        if(a[i] == 25) ++dem25; // Nếu khách đưa tờ 25 thì không cần trả lại
         else if(a[i] == 50){
-            if(dem25 == 0) return 0;
-            --dem25;
-            ++dem50;
+            if(dem25 == 0) return 0; // Nếu không có tờ 25 để trả lại thì không thể bán vé
+            --dem25; // Nếu có tờ 25 thì trả lại và nhận tờ 50
+            ++dem50; // Đếm số tờ 50
         }
         else{
-            if(dem25 == 0 || (dem25 * 25 + dem50 * 50 < 75)) return 0;
+            if(dem25 == 0 || (dem25 * 25 + dem50 * 50 < 75)) return 0; // Nếu không có tờ 25 hoặc tổng tiền không đủ để trả lại thì không thể bán vé
             if(dem50 != 0){
                 --dem50; --dem25;
             }
@@ -37,13 +37,6 @@ int main() {
     else printf("NO\n");
     return 0;
 }
-
-
-
-
-
-
-
 
 // int main() {
 //     int n;
